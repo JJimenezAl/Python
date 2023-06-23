@@ -1,0 +1,5 @@
+problemillas con miniconda
+
+conda update -n base -c defaults conda
+
+conda init bash y volver a abrir consola
