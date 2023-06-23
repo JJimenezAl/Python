@@ -1,0 +1,17 @@
+
+jupyter-notebook --generate-config
+
+cat /home/python/.jupyter/jupyter_notebook_config.py | grep NotebookApp.ip
+
+
+c.NotebookApp.ip = '0.0.0.0'
+
+
+jupyter-notebook --no-browser --port=8898
+
+#abrir explorador local y http://ip_servdior( no local) : puerto
+
+
+Acordarse del tunel en putty
+
+Doc Capturatelnet.docx
