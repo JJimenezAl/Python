@@ -1,0 +1,32 @@
+
+	
+
+Use the jupyter notebook config file:
+
+Open cmd (or Anaconda Prompt) and run jupyter notebook --generate-config.
+
+This writes a file to C:\Users\username\.jupyter\jupyter_notebook_config.
+
+Search for the following line: #c.NotebookApp.notebook_dir = ''
+
+Replace by c.NotebookApp.notebook_dir = '/the/path/to/home/folder/'
+
+A la hora de permitir conexiones
+
+
+c.NotebookApp.ip = '0.0.0.0'          # listen on the network
+
+
+iniciar consola
+
+jupyter notebook --no-browser --port=8898
+
+Hacer otra sesion con el mapeo
+
+ssh -N -f -L 127.0.0.1:8898:127.0.0.1:8898 jorge@Xxx.xxx.xxx.xxx
+ o con cliente putty haciendo tunnel 
+source 8898
+Destination 127.0.0.1:8898
+
+Una vez hecho esto poner la dirección 127.0.0.1:8898 en local en mi explorador web
+Puedr ser que la primera vez pida password o el token que me aparece cuando lo he iniciado en la primera ventana

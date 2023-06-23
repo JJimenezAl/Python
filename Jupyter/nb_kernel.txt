@@ -1,0 +1,19 @@
+##Opciones
+conda install nb_conda
+(si diese problemas probamos con nb_conda_kernels)
+NO deja nb_conda
+Con esto parece que funciona. al menos lo instsla pero no carga los kernerls en notebook 
+conda install -c conda-forge nb_conda
+##reinstalando jupyter ha funcionado
+conda install -c conda-forge nb_conda
+conda install -c conda-forge nb_conda_kernels
+conda install nbextension
+conda update nb_conda nb_conda_kernels
+conda install nb_conda
+conda install jupyter
+conda install nb_conda
+
+
+##Otra opcion puede ser
+#gan es el nombre de un entorno
+python -m ipykernel install --user --name gan

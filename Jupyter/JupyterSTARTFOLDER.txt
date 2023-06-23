@@ -1,0 +1,31 @@
+en windows cambiar la carpetra destino en el acceos directo no funciona
+
+Mofidico linea en del fichero config en 
+
+C:\Users\d698760\.jupyter
+
+
+
+
+cd into the directory or a parent directory (with the intended directory you will work nested in it).
+
+Note it must be a folder (E:\> --- This will not work)
+
+Then just run the command jupyter notebook
+
+
+
+
+Well. I just wrote .bat file where first line is cd path_to_my_starting_folder and second line is jupyter notebook(in your case it is probably ipython notebook) and my problem was solved.
+
+
+
+Open cmd (or Anaconda Prompt) and run jupyter notebook --generate-config.
+
+This writes a file to C:\Users\username\.jupyter\jupyter_notebook_config.py.
+
+Browse to the file location and open it in an Editor
+
+Search for the following line in the file: #c.NotebookApp.notebook_dir = ''
+
+Replace by c.NotebookApp.notebook_dir = '/the/path/to/home/folder/'
